@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-void: #030712;
+    --bg-deep: #0F172A;
+    --bg-surface: #1E293B;
+    --bg-elevated: #334155;
+    --accent-cyan: #06B6D4;
+    --accent-cyan-dim: #164E63;
+    --accent-emerald: #10B981;
+    --accent-emerald-dim: #065F46;
+    --accent-rose: #F43F5E;
+    --accent-rose-dim: #9F1239;
+    --accent-amber: #F59E0B;
+    --accent-amber-dim: #92400E;
+    --accent-violet: #8B5CF6;
+    --accent-violet-dim: #5B21B6;
+    --text-primary: #F1F5F9;
+    --text-secondary: #94A3B8;
+    --text-muted: #64748B;
+    --border-subtle: #1E293B;
+    --border-active: #06B6D4;
+    --shadow-card: 0 1px 3px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.2);
+    --shadow-elevated: 0 4px 12px rgba(0,0,0,0.4), 0 2px 4px rgba(0,0,0,0.3);
+    --shadow-glow-cyan: 0 0 20px rgba(6,182,212,0.15);
+    --shadow-glow-rose: 0 0 20px rgba(244,63,94,0.15);
+
+    --background: 222 47% 5%;
+    --foreground: 210 40% 96%;
+    --card: 217 33% 17%;
+    --card-foreground: 210 40% 96%;
+    --popover: 217 33% 17%;
+    --popover-foreground: 210 40% 96%;
+    --primary: 186 94% 42%;
+    --primary-foreground: 222 47% 5%;
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 96%;
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 16% 57%;
+    --accent: 186 94% 42%;
+    --accent-foreground: 222 47% 5%;
+    --destructive: 348 90% 60%;
+    --destructive-foreground: 210 40% 96%;
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 186 94% 42%;
+    --radius: 0.5rem;
+    --sidebar-background: 217 33% 17%;
+    --sidebar-foreground: 210 40% 96%;
+    --sidebar-primary: 186 94% 42%;
+    --sidebar-primary-foreground: 222 47% 5%;
+    --sidebar-accent: 217 33% 17%;
+    --sidebar-accent-foreground: 210 40% 96%;
+    --sidebar-border: 217 33% 17%;
+    --sidebar-ring: 186 94% 42%;
+  }
+
+  * {
+    @apply border-border-subtle;
+  }
+
+  body {
+    @apply bg-bg-deep text-text-primary;
+    font-family: 'Inter', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
